@@ -2,7 +2,7 @@
 
 ## MAIN OBJECTIVE:
 - To test DISTRIBUTED implementation of LoRA training of HiggingFace's LLM models with Distributed SageMaker
-  - Notebook: sagemaker-notebook-LORA.ipynb SM
+  - Notebook: sagemaker-notebook-LORA.ipynb
   - Steps Review & Findings: In the notebook
   - Status: SUCCESFUL 
 

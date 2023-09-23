@@ -8,7 +8,7 @@ Implement and test efficiency of LoRA and QLoRA for fine-tuning of LLM models in
 
 
 # MOTIVATION:
-- The success of LLM models is rooted in HUGE sizes of the models trained on HUGE number of examples on MANY GPUs over LONG period of times resulting in HUGE TRAINIG COST. Thus, LLMs are beyond reach to individual businesses due to technical and cost restrictions.
+- The success of LLM models is rooted in HUGE sizes of the models trained on HUGE number of examples on MANY GPUs over LONG period of times resulting in HUGE TRAINIG COST. Thus, training LLMs from-scratch is beyond reach to many individual businesses due to technical and cost restrictions.
 - Recently, research community came up with (x)LoRA approaches to train LLM with reduced hardware requirements. Today, a 65B parameter model can be trained on a single GPU with those techniques.
 - While we welcome such development, we see a huge potential in combining (x)LoRA training with Data Parallelism for even faster training. In such scenario:
   - LoRA is the enabler which makes feasible an industrial application of LLMs (reasonable hardware requirements and budget sizes)

@@ -26,3 +26,8 @@ Implement and test efficiency of LoRA and QLoRA for fine-tuning of LLM models in
 - G5 instances are not supported in Distributed SageMaker modes due to SageMaker Environment limitations.
 - Running LLM Fine-Tuning in distirbuted modes requires boosting Learning Rates more then the ratio of parallelism!
 - LoRA and QLoRA allow to increase the Batch Size and require fine-tuning of Learning Rate to achieve comparable training performance to that achived with Single GPU batch size.
+
+- Detailed findings in the file: 
+
+
+# ANALYSIS:

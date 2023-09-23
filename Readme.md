@@ -27,7 +27,19 @@ Implement and test efficiency of LoRA and QLoRA for fine-tuning of LLM models in
 - Running LLM Fine-Tuning in distirbuted modes requires boosting Learning Rates more then the ratio of parallelism!
 - LoRA and QLoRA allow to increase the Batch Size and require fine-tuning of Learning Rate to achieve comparable training performance to that achived with Single GPU batch size.
 
-- Detailed findings in the file: 
+- Detailed findings in the file: LLMs_with_LoRA_QLoRA_in_SMDDP_SMMDP.ipynb
 
 
 # ANALYSIS:
+- Run the notebook: LLMs_with_LoRA_QLoRA_in_SMDDP_SMMDP.ipynb
+- Analysis Parameters:
+  - Task: Sequence Classifications
+  - LLM Model: DistilBERT
+  - Dataset: IMDB
+  - SageMaker Environment:
+    - Single GPU Instances: ml.p3.2xlarge, ml.g5.4xlarge
+    - Multi (8) GPU Instance: ml.p3.16xlarge
+- The top cell includes full discussion of the results
+- The notebook has settings of each Distirbution Mode in dedicated cells
+- Within each cell, specify the .py file for the LoRA Mode of interst.
+- Each cell has detailed summary of results of scenarios run with that cell

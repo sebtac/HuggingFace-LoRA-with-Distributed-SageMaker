@@ -18,8 +18,8 @@ Implement and test efficiency of LoRA and QLoRA for fine-tuning of LLM models in
 
 # KEY FINDINGS:
 - Both LoRA and QLoRA were successfully implemented in DDP mode in SageMaker with expected benefits in:
-    - resource requirements
-    - training speed
+    - Resource Requirements
+    - Training Speed
 - LoRA was successfully implemented in MDP mode in SageMaker with expected benefits
 - QLoRA was not successfully implemented in MDP mode as training freezes due to unknown reason (no error message is generated and deeper troubleshooting is needed)
 - In Single GPU Mode, P3 Instances offer better performance (for smaller models) despite lower GPU memory per instance (P3:16GB vs. G5:24GB)

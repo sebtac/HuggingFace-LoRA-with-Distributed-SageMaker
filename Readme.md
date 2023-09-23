@@ -1,13 +1,13 @@
-MAIN OBJECTIVE: 
+#MAIN OBJECTIVE: 
 Implement and test efficiency of LoRA and QLoRA for fine-tuning of LLM models in DDP and MDP distributed modes in SageMaker
            
-SECONDARY OBJECTIVE(s): 
+#SECONDARY OBJECTIVE(s): 
 - Test relative performance and applicability of p3 and g5 EC2 instances to LLM fine-tuning
 - Test the impact of LEARNING RATE on training performance in distributed modes
 - Test the ability to increase the Batch Size with LoRA and QLoRA in distributed modes
 
 
-MOTIVATION:
+#MOTIVATION:
 The success of LLM models is rooted in HUGE sizes of the models trained on HUGE number of examples on MANY GPUs over LONG period of times resulting in HUGE TRAINIG COST
 Thus, LLMs are beyond reach to individual businesses due to technical and cost restrictions.
 Recently, research community came up with (x)LoRA approaches to train LLM with reduced hardware requirements.
@@ -18,7 +18,7 @@ and Data Parallelism provides training speedups that make fine-tuning of LLMs fe
 Moreover, we explore feasibility of combining (x)LoRA approaches with Model Parallelism to enable efficient training of bigger than 65B models - which we expect to be of huge interest to the industry in the coming years.
 
 
-KEY FINDINGs:
+#KEY FINDINGs:
 - Both LoRA and QLoRA were successfully implemented in DDP mode in SageMaker with expected benefits in:
     - resource requirements
     - training speed
